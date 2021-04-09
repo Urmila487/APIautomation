@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210409 09:33:33.665" rpa="false">
+<suite id="s1" name="AllCases" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases">
+<suite id="s1-s1" name="TC 001 Get Response" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_001_Get_Response.robot">
+<test id="s1-s1-t1" name="TC_001_Get_Response">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>Get_student_details</arg>
+<arg>${Base_URL}</arg>
+</arguments>
+<msg timestamp="20210409 09:33:34.023" level="INFO">Creating Session using : alias=Get_student_details, url=http://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210409 09:33:34.023" endtime="20210409 09:33:34.024"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<arguments>
+<arg>Get_student_details</arg>
+<arg>api/studentsDetails</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210409 09:33:34.025" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:35.173" level="INFO">GET Request : url=http://thetestingworldapi.com//api/studentsDetails 
+ path_url=//api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20210409 09:33:35.173" level="INFO">GET Response : url=http://thetestingworldapi.com//api/studentsDetails 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/8.5', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 09 Apr 2021 06:33:33 GMT', 'Content-Length': '10905'} 
+ body=[{"id":164192,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164191,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164190,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164189,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164188,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164187,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164186,"first_name":"first_name","middle_name":"middle_name","last_name":"last_name","date_of_birth":"date_of_birth"},{"id":164185,"first_name":"first_name","middle_name":"middle_name","last_name":"last_name","date_of_birth":"date_of_birth"},{"id":164184,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164183,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164182,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164181,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164180,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164179,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164178,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164177,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164176,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164175,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164174,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164173,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164172,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164171,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164170,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164169,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164168,"first_name":"Test Name","middle_name":"MName","last_name":"Automation","date_of_birth":"12/12/1999"},{"id":164167,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164166,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164165,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164164,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164163,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164162,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164161,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164160,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164159,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164158,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164157,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164156,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164155,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164154,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164153,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164152,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164151,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164150,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164149,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164148,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164147,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164146,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164144,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164143,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164141,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164140,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164138,"first_name":"Gillian","middle_name":"Lestor","last_name":"Marvy","date_of_birth":"12/12/1992"},{"id":164137,"first_name":"{{fist_name}}","middle_name":"{{middle_name}}","last_name":"{{last_name}}","date_of_birth":"{{date_of_birth}}"},{"id":164136,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164135,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164133,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164132,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164130,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164129,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164127,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164126,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164124,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164122,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164121,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164119,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164118,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164116,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164115,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164113,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164112,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164110,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164109,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164107,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164106,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164104,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164103,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164101,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164100,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164098,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164097,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164095,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164094,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164092,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164091,"first_name":"jtest","middle_name":"jay","last_name":"testj","date_of_birth":"27/08/2016"},{"id":164090,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164089,"first_name":"Hono","middle_name":"Chris","last_name":"Mbe 4","date_of_birth":"16/05/1989"},{"id":164087,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164086,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164084,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164083,"first_name":"Philip","middle_name":"D.","last_name":"Sherman","date_of_birth":"30/05/1935"},{"id":164081,"first_name":"Hank","middle_name":"O.","last_name":"Puss","date_of_birth":"17/06/1946"},{"id":164080,"first_name":"Ph... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20210409 09:33:35.173" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:34.024" endtime="20210409 09:33:35.173"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:35.175" endtime="20210409 09:33:35.176"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:35.179" endtime="20210409 09:33:35.184"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.headers}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:35.184" endtime="20210409 09:33:35.185"></status>
+</kw>
+<status status="PASS" starttime="20210409 09:33:34.022" endtime="20210409 09:33:35.186" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210409 09:33:33.713" endtime="20210409 09:33:35.189"></status>
+</suite>
+<suite id="s1-s2" name="TC 002 Specificdetails" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_002_Specificdetails.robot">
+<test id="s1-s2-t1" name="TC_002_Fetch_Student_details_by_ID">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>FetchData</arg>
+<arg>${Base_URL}</arg>
+</arguments>
+<msg timestamp="20210409 09:33:35.204" level="INFO">Creating Session using : alias=FetchData, url=http://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210409 09:33:35.204" endtime="20210409 09:33:35.205"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<arguments>
+<arg>FetchData</arg>
+<arg>api/studentsDetails/${StudentID}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210409 09:33:35.207" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:35.753" level="INFO">GET Request : url=http://thetestingworldapi.com//api/studentsDetails/108513 
+ path_url=//api/studentsDetails/108513 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20210409 09:33:35.753" level="INFO">GET Response : url=http://thetestingworldapi.com//api/studentsDetails/108513 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/8.5', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 09 Apr 2021 06:33:34 GMT', 'Content-Length': '126'} 
+ body={"status":"true","data":{"id":108513,"first_name":"Update","middle_name":"8","last_name":"Loop","date_of_birth":"17-03-2021"}} 
+ </msg>
+<msg timestamp="20210409 09:33:35.753" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:35.206" endtime="20210409 09:33:35.753"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<assign>
+<var>${actual_code}</var>
+</assign>
+<msg timestamp="20210409 09:33:35.756" level="INFO">${actual_code} = 200</msg>
+<status status="PASS" starttime="20210409 09:33:35.755" endtime="20210409 09:33:35.756"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_code}</arg>
+<arg>200</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:35.757" endtime="20210409 09:33:35.757"></status>
+</kw>
+<status status="PASS" starttime="20210409 09:33:35.202" endtime="20210409 09:33:35.758" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210409 09:33:35.193" endtime="20210409 09:33:35.761"></status>
+</suite>
+<suite id="s1-s3" name="TC 003 PostRequest" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_003_PostRequest.robot">
+<test id="s1-s3-t1" name="TC_003_Post_Response">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>${Base_URL}</arg>
+</arguments>
+<msg timestamp="20210409 09:33:36.249" level="INFO">Creating Session using : alias=AddData, url=http://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210409 09:33:36.249" endtime="20210409 09:33:36.249"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>first_name=Urmila</arg>
+<arg>middle_name=Vadi</arg>
+<arg>last_name=Ghadiya</arg>
+<arg>date_of_birth=25Jan</arg>
+</arguments>
+<assign>
+<var>${body}</var>
+</assign>
+<msg timestamp="20210409 09:33:36.253" level="INFO">${body} = {'first_name': 'Urmila', 'middle_name': 'Vadi', 'last_name': 'Ghadiya', 'date_of_birth': '25Jan'}</msg>
+<status status="PASS" starttime="20210409 09:33:36.252" endtime="20210409 09:33:36.253"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Content-Type=application/json</arg>
+</arguments>
+<assign>
+<var>${header}</var>
+</assign>
+<msg timestamp="20210409 09:33:36.255" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20210409 09:33:36.254" endtime="20210409 09:33:36.255"></status>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>api/studentsDetails</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210409 09:33:36.255" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20210409 09:33:36.700" level="INFO">POST Request : url=http://thetestingworldapi.com//api/studentsDetails 
+ path_url=//api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '97'} 
+ body={"first_name": "Urmila", "middle_name": "Vadi", "last_name": "Ghadiya", "date_of_birth": "25Jan"} 
+ </msg>
+<msg timestamp="20210409 09:33:36.701" level="INFO">POST Response : url=http://thetestingworldapi.com//api/studentsDetails 
+ status=201, reason=Created 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Location': 'http://thetestingworldapi.com/api/studentsDetails/164193', 'Server': 'Microsoft-IIS/8.5', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 09 Apr 2021 06:33:35 GMT', 'Content-Length': '102'} 
+ body={"id":164193,"first_name":"Urmila","middle_name":"Vadi","last_name":"Ghadiya","date_of_birth":"25Jan"} 
+ </msg>
+<msg timestamp="20210409 09:33:36.701" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:36.255" endtime="20210409 09:33:36.701"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<assign>
+<var>${code}</var>
+</assign>
+<msg timestamp="20210409 09:33:36.703" level="INFO">${code} = 201</msg>
+<status status="PASS" starttime="20210409 09:33:36.702" endtime="20210409 09:33:36.703"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${code}</arg>
+<arg>201</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:36.704" endtime="20210409 09:33:36.705"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:36.706" endtime="20210409 09:33:36.707"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:36.707" endtime="20210409 09:33:36.709"></status>
+</kw>
+<status status="PASS" starttime="20210409 09:33:36.248" endtime="20210409 09:33:36.710" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210409 09:33:35.765" endtime="20210409 09:33:36.712"></status>
+</suite>
+<suite id="s1-s4" name="TC 004 DeleteRequests" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_004_DeleteRequests.robot">
+<test id="s1-s4-t1" name="TC_004_DeleteRequests">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>AppAccess</arg>
+<arg>${Base_URL}</arg>
+</arguments>
+<msg timestamp="20210409 09:33:36.729" level="INFO">Creating Session using : alias=AppAccess, url=http://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210409 09:33:36.728" endtime="20210409 09:33:36.729"></status>
+</kw>
+<kw name="Delete Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `DELETE On Session` instead.</doc>
+<arguments>
+<arg>AppAccess</arg>
+<arg>/api/studentsDetails/108534</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210409 09:33:36.730" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20210409 09:33:37.184" level="INFO">DELETE Request : url=http://thetestingworldapi.com//api/studentsDetails/108534 
+ path_url=//api/studentsDetails/108534 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20210409 09:33:37.185" level="INFO">DELETE Response : url=http://thetestingworldapi.com//api/studentsDetails/108534 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/8.5', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 09 Apr 2021 06:33:35 GMT', 'Content-Length': '43'} 
+ body={"status":"false","msg":"record not found"} 
+ </msg>
+<msg timestamp="20210409 09:33:37.185" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:36.730" endtime="20210409 09:33:37.185"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<assign>
+<var>${code}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.187" level="INFO">${code} = 200</msg>
+<status status="PASS" starttime="20210409 09:33:37.186" endtime="20210409 09:33:37.188"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${code}</arg>
+<arg>200</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:37.189" endtime="20210409 09:33:37.190"></status>
+</kw>
+<kw name="To Json" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<assign>
+<var>${jsonresponse}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.191" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20210409 09:33:37.194" level="INFO">To JSON using : content={"status":"false","msg":"record not found"} </msg>
+<msg timestamp="20210409 09:33:37.194" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20210409 09:33:37.194" level="INFO">${jsonresponse} = {'status': 'false', 'msg': 'record not found'}</msg>
+<status status="PASS" starttime="20210409 09:33:37.191" endtime="20210409 09:33:37.194"></status>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<doc>Get Value From JSON using JSONPath</doc>
+<arguments>
+<arg>${jsonresponse}</arg>
+<arg>status</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${status_list}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.196" level="FAIL">Keyword 'JSONLibrary.Get Value From Json' expected 2 arguments, got 3.</msg>
+<status status="FAIL" starttime="20210409 09:33:37.195" endtime="20210409 09:33:37.196"></status>
+</kw>
+<status status="FAIL" starttime="20210409 09:33:36.725" endtime="20210409 09:33:37.196" critical="yes">Keyword 'JSONLibrary.Get Value From Json' expected 2 arguments, got 3.</status>
+</test>
+<status status="FAIL" starttime="20210409 09:33:36.715" endtime="20210409 09:33:37.202"></status>
+</suite>
+<suite id="s1-s5" name="TC 005 PutRequest" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_005_PutRequest.robot">
+<test id="s1-s5-t1" name="TC_005_Put_Request">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>${Base_URL}</arg>
+</arguments>
+<msg timestamp="20210409 09:33:37.221" level="INFO">Creating Session using : alias=AddData, url=http://thetestingworldapi.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210409 09:33:37.220" endtime="20210409 09:33:37.221"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>id=108542</arg>
+<arg>first_name=Ravindra</arg>
+<arg>middle_name=Vadi</arg>
+<arg>last_name=Ghadiya</arg>
+<arg>date_of_birth=25Jan</arg>
+</arguments>
+<assign>
+<var>${body}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.224" level="INFO">${body} = {'id': '108542', 'first_name': 'Ravindra', 'middle_name': 'Vadi', 'last_name': 'Ghadiya', 'date_of_birth': '25Jan'}</msg>
+<status status="PASS" starttime="20210409 09:33:37.223" endtime="20210409 09:33:37.224"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Content-Type=application/json</arg>
+</arguments>
+<assign>
+<var>${header}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.226" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20210409 09:33:37.225" endtime="20210409 09:33:37.226"></status>
+</kw>
+<kw name="Put Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `PUT On Session` instead.</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>api/studentsDetails/108542</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.227" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
+<msg timestamp="20210409 09:33:37.651" level="INFO">PUT Request : url=http://thetestingworldapi.com//api/studentsDetails/108542 
+ path_url=//api/studentsDetails/108542 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '115'} 
+ body={"id": "108542", "first_name": "Ravindra", "middle_name": "Vadi", "last_name": "Ghadiya", "date_of_birth": "25Jan"} 
+ </msg>
+<msg timestamp="20210409 09:33:37.651" level="INFO">PUT Response : url=http://thetestingworldapi.com//api/studentsDetails/108542 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/8.5', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 09 Apr 2021 06:33:35 GMT', 'Content-Length': '46'} 
+ body={"status":"true","msg":"update  data success"} 
+ </msg>
+<msg timestamp="20210409 09:33:37.651" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:37.226" endtime="20210409 09:33:37.651"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:37.656" endtime="20210409 09:33:37.658"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:37.659" endtime="20210409 09:33:37.661"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<arguments>
+<arg>AddData</arg>
+<arg>api/studentsDetails/108542</arg>
+</arguments>
+<assign>
+<var>${response1}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.662" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:37.950" level="INFO">GET Request : url=http://thetestingworldapi.com//api/studentsDetails/108542 
+ path_url=//api/studentsDetails/108542 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20210409 09:33:37.950" level="INFO">GET Response : url=http://thetestingworldapi.com//api/studentsDetails/108542 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/8.5', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Fri, 09 Apr 2021 06:33:36 GMT', 'Content-Length': '129'} 
+ body={"status":"true","data":{"id":108542,"first_name":"Ravindra","middle_name":"Vadi","last_name":"Ghadiya","date_of_birth":"25Jan"}} 
+ </msg>
+<msg timestamp="20210409 09:33:37.950" level="INFO">${response1} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:37.662" endtime="20210409 09:33:37.950"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${response1.content}</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:37.953" endtime="20210409 09:33:37.954"></status>
+</kw>
+<status status="PASS" starttime="20210409 09:33:37.219" endtime="20210409 09:33:37.955" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210409 09:33:37.206" endtime="20210409 09:33:37.958"></status>
+</suite>
+<suite id="s1-s6" name="TC 006 Getrequest" source="C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_006_Getrequest.robot">
+<test id="s1-s6-t1" name="TC_006 Get Request">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>Get_city_name</arg>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20210409 09:33:37.978" level="INFO">Creating Session using : alias=Get_city_name, url=https://reqres.in/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210409 09:33:37.977" endtime="20210409 09:33:37.978"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<arguments>
+<arg>Get_city_name</arg>
+<arg>/users/2</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210409 09:33:37.979" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:38.715" level="INFO">GET Request : url=https://reqres.in/api/users/2 
+ path_url=/api/users/2 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20210409 09:33:38.715" level="INFO">GET Response : url=https://reqres.in/api/users/2 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 09 Apr 2021 06:33:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=d93d3eb1f4c8cc621262f7abd397a749c1617950017; expires=Sun, 09-May-21 06:33:37 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'REVALIDATED', 'cf-request-id': '0956ef1f320000376d30809000000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"group":"cf-nel","endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report?s=xT8Otkp4sgUWqWp403kXzwsZ6M%2FS7vY8Rh02nP%2BD%2Fabdp8J%2F0ZU34hXcE0TWLcJ3n3rC7tQTkOivsCtOg6JFH6th64ues70%2BrWI%3D"}],"max_age":604800}', 'NEL': '{"max_age":604800,"report_to":"cf-nel"}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '63d1b4784cba376d-HEL', 'Content-Encoding': 'gzip', 'alt-svc': 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg timestamp="20210409 09:33:38.715" level="INFO">c:\python39\lib\site-packages\urllib3\connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20210409 09:33:38.719" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210409 09:33:37.979" endtime="20210409 09:33:38.719"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<assign>
+<var>${status_code}</var>
+</assign>
+<msg timestamp="20210409 09:33:38.721" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20210409 09:33:38.720" endtime="20210409 09:33:38.721"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${status_code}</arg>
+<arg>200</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:38.722" endtime="20210409 09:33:38.724"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<assign>
+<var>${body}</var>
+</assign>
+<msg timestamp="20210409 09:33:38.726" level="INFO">${body} = {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","te...</msg>
+<status status="PASS" starttime="20210409 09:33:38.725" endtime="20210409 09:33:38.726"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${body}</arg>
+<arg>Janet</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:38.727" endtime="20210409 09:33:38.728"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${response.headers}</arg>
+<arg>Content-Type</arg>
+</arguments>
+<assign>
+<var>${contenttypevalue}</var>
+</assign>
+<msg timestamp="20210409 09:33:38.728" level="INFO">${contenttypevalue} = application/json; charset=utf-8</msg>
+<status status="PASS" starttime="20210409 09:33:38.728" endtime="20210409 09:33:38.728"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${contenttypevalue}</arg>
+<arg>application/json; charset=utf-8</arg>
+</arguments>
+<status status="PASS" starttime="20210409 09:33:38.730" endtime="20210409 09:33:38.731"></status>
+</kw>
+<status status="PASS" starttime="20210409 09:33:37.976" endtime="20210409 09:33:38.731" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210409 09:33:37.961" endtime="20210409 09:33:38.734"></status>
+</suite>
+<status status="FAIL" starttime="20210409 09:33:33.668" endtime="20210409 09:33:38.739"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1">Critical Tests</stat>
+<stat pass="5" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" id="s1" name="AllCases">AllCases</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TC 001 Get Response">AllCases.TC 001 Get Response</stat>
+<stat pass="1" fail="0" id="s1-s2" name="TC 002 Specificdetails">AllCases.TC 002 Specificdetails</stat>
+<stat pass="1" fail="0" id="s1-s3" name="TC 003 PostRequest">AllCases.TC 003 PostRequest</stat>
+<stat pass="0" fail="1" id="s1-s4" name="TC 004 DeleteRequests">AllCases.TC 004 DeleteRequests</stat>
+<stat pass="1" fail="0" id="s1-s5" name="TC 005 PutRequest">AllCases.TC 005 PutRequest</stat>
+<stat pass="1" fail="0" id="s1-s6" name="TC 006 Getrequest">AllCases.TC 006 Getrequest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210409 09:33:34.025" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:35.207" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:36.255" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20210409 09:33:36.730" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20210409 09:33:37.191" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20210409 09:33:37.227" level="WARN">Keyword 'RequestsLibrary.Put Request' is deprecated. Please use `PUT On Session` instead.</msg>
+<msg timestamp="20210409 09:33:37.662" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20210409 09:33:37.973" level="ERROR">Error in file 'C:\Users\rvadi\PycharmProjects\APIAutomation\AllCases\TC_006_Getrequest.robot' on line 4: Importing test library 'jsonLibrary' failed: ModuleNotFoundError: No module named 'jsonLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python39\Scripts\robot.exe
+  c:\python39\python39.zip
+  c:\python39\DLLs
+  c:\python39\lib
+  c:\python39
+  c:\python39\lib\site-packages</msg>
+<msg timestamp="20210409 09:33:37.979" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+</errors>
+</robot>
