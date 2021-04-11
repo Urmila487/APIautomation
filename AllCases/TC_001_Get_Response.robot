@@ -2,9 +2,6 @@
 Library  RequestsLibrary
 
 
-
-
-
 *** Variables ***
 ${Base_URL}  http://thetestingworldapi.com/
 
